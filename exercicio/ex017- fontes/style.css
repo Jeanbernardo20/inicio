@@ -1,0 +1,26 @@
+/*medias absolutas
+cm, mm, in, px, pt, pc
+
+medidaS Relativo
+em, ex, rem, vw, vh, %
+
+obs: recomendação da w3c use em fontes os tamanhos absoluto px e relativo em
+16px geralmente = 1em
+*/
+
+body{
+    font-size: 1em;
+    font-weight: lighter;
+    font-style: ;
+    /*lighter, normal, bold, bolder*/
+}
+h1{
+    /*shortehand fonte
+    você pode condensar as 04 fontes em uma única linha usando a seguinte seguencia:
+    - font-style ->fonte-weight -> font-size -> fonte-family*/
+    font: italic bolder 3em arial;
+}
+p{
+    text-align: justify;
+
+}
