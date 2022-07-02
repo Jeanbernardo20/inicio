@@ -1,112 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>desafio 14</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>desafio 14</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-        table {
-            border-collapse: collapse;
-        }
+            table {
+                border-collapse: collapse;
+            }
 
-        caption {
-            font-size: 1.3em;
-            font-weight: bold;
-            padding: 10px;
-        }
+            caption {
+                font-size: 1.3em;
+                font-weight: bold;
+                padding: 10px;
+            }
 
-        th, td {
-           
-            border: 1px solid gray;
-            padding: 10px;
-        }
-         thead th{
-            background-color: rgba(128, 128, 128, 0.432);
-        }
-        
-        
-    </style>
-</head>
-<body>
-    <h1>Desafio 14 </h1>
-    
-    <table>
-        <caption>
+            th, td {
             
-            Tabela desafio 14
+                border: 1px solid gray;
+                padding: 10px;
+            }
+            td{
+                text-align: center;
+            }
+            thead th{
+                background-color: rgba(128, 128, 128, 0.432);
+                
+            }
+            .cinza{
+                background-color: rgba(128, 128, 128, 0.432);
+                text-align: left;
+            }
 
-        </caption>
-        <thead>
-           <tr>
-            <th>Área</th>
-            <th>Disciplina</th>
-            <th>Nota 1 </th>
-            <th>Nota 2 </th>
-            <th>Media</th>
-           </tr>
-                   
+            #cinzamedia{
+                background-color: rgba(128, 128, 128, 0.432);
+            }
 
-        </thead>
+                    
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>Tabela de Notas Escolares </h1>
+        
+        <table>
+            <caption>Tabela de Notas</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Área</th>
+                    <th rowspan="2" scope="rowgroup">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas </th>
+                    <th rowspan="2" scope="rowgroup">Média</th>
+                </tr>
 
-        <tbody>
-            <tr>
-                <th rowspan="4" scope="rowgroup">Exatas</th>
-                <td>Matemática</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Fisica</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Química</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>0.0.</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <th colspan="4" scope="colgroup" style="background-color: rgba(128, 128, 128, 0.432);">Médias Exatas</th>
-                <td style="background-color: rgba(128, 128, 128, 0.432);">0.0</td>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>       
 
-            </tr>
-            <tr>
-                <th rowspan="2" scope="rowgroup">Humanas</th>
-                <td>História</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+            </thead>
 
-            </tr>
-            <tr>
-                <th colspan="4" scope="colgroup" style="background-color: rgba(128, 128, 128, 0.432);">Médias de Humanas</th>
-                <td style="background-color: rgba(128, 128, 128, 0.432);">0.0</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="colgroup" class="cinza">Médias Exatas</th>
+                    <td id="cinzamedia" >0.0</td>
 
-        </tbody>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+
+                </tr>
+                <tr>
+                    <th colspan="4" scope="colgroup" class="cinza">Médias de Humanas</th>
+                    <td id="cinzamedia">0.0</td>
+                </tr>
+
+            </tbody>
 
 
-    </table>
-    
-</body>
+        </table>
+        
+    </body>
 </html>
